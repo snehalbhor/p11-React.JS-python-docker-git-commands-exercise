@@ -1,0 +1,89 @@
+********************************************************************************************************************************************************************
+Initializing a Repository and Making Changes
+
+git init
+
+Initialize a new repository
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git status
+
+Check the status of changes
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git add -a
+
+Stage the changes
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git commit -m {"Initial commit"}
+
+Commit the changes
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git push -u origin main/master
+
+command is used to push the local changes in the "master"/"main" branch to the remote repository named "origin"
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git remote -v
+
+output of this command--
+origin  https://github.com/your-username/your-repository.git (fetch)
+origin  https://github.com/your-username/your-repository.git (push)
+
+This output indicates that there is a remote repository named "origin," and it provides the fetch and push URLs for that remote.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git branch
+
+This command lists all the local branches in your repository. 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git branch <branch_name>
+
+This creates a new branch with the specified name but does not switch to it.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git checkout <branch_name>
+
+This creates a new branch and switches to it in one step.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git branch -d <branch_name>
+
+This deletes the specified branch. The -d flag stands for "delete." Use -D for a force delete, which discards changes if the branch contains unmerged changes.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git branch -m <new_branch_name>
+
+This renames the current branch to the specified name.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git branch -r
+
+This lists both local and remote branches.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git log
+
+View commit history
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+rm -rf .git
+
+The rm -rf .git command is used to recursively and forcefully remove the entire .git directory in a Git repository. This command is typically used when you want to completely remove Git version control from a project, essentially "unversioning" the project.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git reflog
+
+The primary use of git reflog is to review the history of branch references and recover from situations where you may have accidentally deleted branches or made other changes.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git reset --hard HEAD
+
+If you have made changes to your working directory and want to discard them, this command will reset your working directory to match the last commit.
+If you have added changes to the staging area but want to unstage them, you can use this command.
+If you want to undo the last commit (or a series of commits) and discard all changes, you can use this command.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

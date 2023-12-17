@@ -1,0 +1,22 @@
+npx create-react-app {Your website name} 
+
+this command  sets up a new project with a basic directory structure, configuration files, and a development server.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+npm start
+
+this command starts the development server.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+npm install <package-name>
+
+Used to install a package or dependency for your React project. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+npm add react-icons
+
+The npm add or npm install part is used to install dependencies specified in the package.json file.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

@@ -1,0 +1,61 @@
+docker images
+
+This command will display a list of images
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+docker rmi image_name/ image_id
+
+The docker rmi command is used to remove one or more Docker images from your local machine.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+docker rmi nginx:latest
+
+This command removes the specified image (nginx in this case) from your local machine.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+docker build -t <image_name>:<tag> <path_to_dockerfile_context>
+
+The docker build -t command is used to build a Docker image from a specified Dockerfile and optionally tag the image with a name and optional tag.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+docker-compose up -d
+
+This command will read the docker-compose.yml file, create and start the containers specified in the services section, and then run them in the background. You'll get your terminal prompt back immediately.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+docker ps
+
+docker ps shows a list of running containers. If you want to see all containers, including the ones that have exited, you can use the -a option.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+docker ps -a
+
+This command will display a table with information about all containers on your system, including their Container ID, Image, Command, Created time, Status, Ports, and Names.
+
+CONTAINER ID   IMAGE        COMMAND                  CREATED             STATUS                     PORTS               NAMES
+abcd1234efgh   nginx:latest "nginx -g 'daemon of…"   2 days ago          Up 2 hours                 80/tcp              web_server
+5678ijklmnop   postgres     "docker-entrypoint.s…"   3 weeks ago         Exited (0) 3 days ago                            db_server
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+docker container prune
+
+Use this command to remove all stopped containers. Be careful, as this action is irreversible.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+docker rm <container_id or container_name>
+
+Use this command to remove a specific container. Add -f to force removal if the container is still running.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+docker network ls
+
+The docker network ls command is used to list all Docker networks on your system. Docker networks are used to connect containers so that they can communicate with each other, either within the same host or across different hosts.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+docker-compose down
+
+The docker-compose down command is used to stop and remove the containers defined in a Docker Compose file. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

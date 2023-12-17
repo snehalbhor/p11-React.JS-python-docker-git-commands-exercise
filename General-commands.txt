@@ -1,0 +1,24 @@
+cd <directory_path>
+
+<directory_path>: The path to the directory you want to change to. This can be an absolute path or a relative path.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+cd ..
+
+This moves the current working directory up one level (to its parent directory).
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+pwd
+
+The pwd (print working directory) command can be used to display the current working directory.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ls
+
+This command lists the files and directories in the current working directory.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+history >{filename.txt}
+
+This will save all the commands which you fire in terminal
+
